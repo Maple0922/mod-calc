@@ -1,0 +1,70 @@
+@import "import";
+
+// styles
+
+.header {
+  height: $height-header;
+  width: 100%;
+  padding: 0 30px;
+  background: $white;
+  box-shadow: $basic-shadow;
+  position: relative;
+  &__title {
+    font-size: 2.4rem;
+    line-height: $height-header;
+  }
+}
+
+.main {
+  min-height: $height-main;
+  background: $super-light-gray;
+  padding: 30px;
+  font-size: 1.6rem;
+  &__container {
+    background: $white;
+    padding: 24px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: $basic-shadow;
+
+    &.calc {
+
+      input {
+        border: 1px solid #888;
+        border-radius: 4px;
+        height: 40px;
+        padding: 4px 10px;
+        margin-right: 4px;
+        font-size: 1.4rem;
+        width: 80%;
+        margin-bottom: 10px;
+
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+
+    }
+
+    &.result {
+      font-size: 2.2rem;
+
+      input {
+        font-size: 2.2rem;
+        display: inline-block;
+      }
+
+      p {
+        display: inline-block;
+      }
+      .num1 {
+
+      }
+    }
+
+  }
+}
+
+.footer {
+
+}
